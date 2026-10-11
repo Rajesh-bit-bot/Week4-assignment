@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider Library</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="slider-container">
+
+        <h1>Image Slider Library</h1>
+
+        <div class="slider">
+            
+            <!-- Previous Button -->
+            <button class="slider-btn prev" aria-label="Previous image">
+                &#10094;
+            </button>
+
+            <!-- Image Viewing Window -->
+            <div class="slider-window">
+                <div class="slider-track" id="sliderTrack">
+
+                    <!-- Clone of last image -->
+                    <div class="slide">
+                        <img src="https://picsum.photos/id/1043/1200/700"
+                             alt="Mountain landscape">
+                    </div>
+
+                    <!-- Original Images -->
+                    <div class="slide">
+                        <img src="https://picsum.photos/id/1018/1200/700"
+                             alt="Mountain and lake landscape">
+                    </div>
+
+                    <div class="slide">
+                        <img src="https://picsum.photos/id/1015/1200/700"
+                             alt="River and mountain landscape">
+                    </div>
+
+                    <div class="slide">
+                        <img src="https://picsum.photos/id/1019/1200/700"
+                             alt="Forest landscape">
+                    </div>
+
+                    <div class="slide">
+                        <img src="https://picsum.photos/id/1043/1200/700"
+                             alt="Mountain landscape">
+                    </div>
+
+                    <!-- Clone of first image -->
+                    <div class="slide">
+                        <img src="https://picsum.photos/id/1018/1200/700"
+                             alt="Mountain and lake landscape">
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Next Button -->
+            <button class="slider-btn next" aria-label="Next image">
+                &#10095;
+            </button>
+
+        </div>
+
+        <!-- Navigation Dots -->
+        <div class="slider-dots" id="sliderDots"></div>
+
+    </main>
+
+    <script src="slider.js"></script>
+
+</body>
+</html>
